@@ -177,7 +177,7 @@ extern void openlog (char *__ident, int __option, int __facility);
 extern int setlogmask (int __mask);
 
 /* Generate a log message using FMT string and option arguments.  */
-extern void syslog (int __pri, char *__fmt, ...);
+extern void syslog (int __pri, const char *__fmt, ...);
 
 /* Generate a log message using FMT and using arguments pointed to by AP.  */
 extern void vsyslog (int __pri, char *__fmt, va_list __ap);
