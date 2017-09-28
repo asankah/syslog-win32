@@ -271,7 +271,7 @@ int setlogmask( int mask )
  *
  * Generate a log message using FMT string and option arguments.
  */
-void syslog( int pri, char* fmt, ... )
+void syslog( int pri, const char *fmt, ... )
 {
     va_list ap;
 
